@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">    <!--Tymeleaf의 문법을 사용하기 위해서 추가-->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>상품 데이터 출력 예제</h1>
+  <div>
+    상품명 : <span th:text="${itemDto.itemNm}"></span>
+    <!-- model 영역에  itemDto객체에 있는 itemNm 출력   -->
+  </div>
+
+  <div>
+    상품상세설명 : <span th:text="${itemDto.itemDetail}"></span>
+  </div>
+
+  <div>
+    상품등록일 : <span th:text="${itemDto.regTime}"></span>
+  </div>
+
+  <div>
+    상품가격 : <span th:text="${itemDto.price}"></span>
+  </div>
+<!--
+상품 데이터 출력 예제
+상품명 : 테스트 상품1
+상품상세설명 : 상품 상세 설명
+상품등록일 : 2024-10-21T17:27:43.870546200
+상품가격 : 10000
+-->
+</body>
+</html>
