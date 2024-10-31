@@ -34,7 +34,7 @@ public class MemberController {
 //        Member member = Member.createMember(memberFormDto, passwordEncoder);
 //        memberService.saveMember(member);
 //
-//        return "redurect:/";
+//        return "redirect:/";
 //    }
 
     /*회원 가입이 성공한다면 메인 페이지로 리다이렉트 시켜주고, 회원 정보 검증 및 중복회원 가입 조건에 의해
